@@ -24,7 +24,7 @@ public class GetImage extends HttpServlet {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/food", "root", "PIYUSH@111WORD016");
+                    "jdbc:mysql://localhost:3306/food", "root", "");
 
             PreparedStatement ps = con.prepareStatement("SELECT img FROM wastage WHERE name=?");
             ps.setString(1, name);
