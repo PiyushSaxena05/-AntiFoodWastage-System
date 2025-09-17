@@ -40,7 +40,7 @@ public class FoodLeft extends HttpServlet {
             out.println("file uploaded<br>");
 
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/food", "root", "PIYUSH@111WORD016");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/food", "root", "");
             PreparedStatement ps = con.prepareStatement(
                 "insert into wastage(name,notice,mobno,img) values(?,?,?,?)"
             );
